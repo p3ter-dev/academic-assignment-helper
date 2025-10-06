@@ -10,9 +10,8 @@ services:
       - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
-    command: >
-      bash -c "postgres"
-  
+    restart: always
+
   pgadmin:
     image: dpage/pgadmin4
     container_name: academic_pgadmin
@@ -20,6 +19,9 @@ services:
       - .env
     ports:
       - "8080:80"
+    depends_on:
+      - postgres
+    restart: always
 
 volumes:
   pgdata:
