@@ -5,17 +5,17 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-POSTGRES_USER = os.getenv("POSTGRES_USER", "student")
-POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD", "SuperSecret123!")
-POSTGRES_DB = os.getenv("POSTGRES_DB", "academic_helper")
-POSTGRES_HOST = os.getenv("POSTGRES_HOST", "localhost")
-POSTGRES_PORT = os.getenv("POSTGRES_PORT", 5432)
-
-DATABASE_URL = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}"
+DATABASE_URL = os.getenv("DATABASE_URL")
+if not DATABASE_URL:
+    user = os.getenv("POSTGRES_USER")
+    pw = os.getenv("POSTGRES_PASSWORD")
+    host = os.getenv("POSTGRES_HOST")
+    port = os.getenv("POSTGRES_PORT")
+    db = os.getenv("POSTGRES_DB")
+    DATABASE_URL = f"postgresql://{user}:{pw}@{host}:{port}/{db}"
 
 engine = create_engine(DATABASE_URL, echo=True)
 
-# Create a configured "Session" class
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 def get_db():
