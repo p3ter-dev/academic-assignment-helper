@@ -3,6 +3,7 @@ uvicorn
 psycopg2-binary
 sqlalchemy
 passlib[bcrypt]
+passlib[argon2]
 python-jose
 python-multipart
 requests
