@@ -1,0 +1,14 @@
+[
+  {
+    "student_id": 1,
+    "text": "What is photosynthesis?"
+  },
+  {
+    "student_id": 2,
+    "text": "What is life?"
+  },
+  {
+    "student_id": 3,
+    "text": "What is RAG?"
+  }
+]
