@@ -6,7 +6,7 @@ from auth import router as auth_router, get_current_student
 
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="Academic Helper API")
+app = FastAPI(title="Helper API")
 
 app.include_router(auth_router)
 
@@ -24,3 +24,7 @@ def read_my_profile(current_student: Student = Depends(get_current_student)):
         "full_name": current_student.full_name,
         "email": current_student.email
     }
+
+@app.get('/')
+def root():
+    return {"msg": "rag service is online" }
