@@ -38,9 +38,6 @@ def get_current_student(
     token: HTTPAuthorizationCredentials = Depends(oauth2_scheme),
     db: Session = Depends(get_db)
 ):
-    """
-    Decode JWT token, verify it, and fetch the student from DB.
-    """
     credentials_exception = HTTPException(
         status_code=401,
         detail="Invalid or expired token",
