@@ -5,7 +5,7 @@ Built with **FastAPI**, **PostgreSQL (pgvector)**, **n8n**, and **OpenAI**, full
 
 ---
 
-## eatures
+## Features
 - **JWT Authentication** for secure student access  
 - **RAG Service** for context-aware academic suggestions  
 - **Plagiarism Detection** using vector similarity  
@@ -23,7 +23,7 @@ git clone https://github.com/p3ter-dev/academic-assignment-helper
 cd academic-assignment-helper
 cp .env.example .env
 
-## Run with Docker
+# Run with Docker
 docker compose up -d --build
 
 # Services:
