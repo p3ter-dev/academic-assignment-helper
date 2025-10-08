@@ -5,14 +5,6 @@ from sqlalchemy.sql import func
 from sqlalchemy.dialects.postgresql import ARRAY
 
 Base = declarative_base()
-
-class User(Base):
-    __tablename__ = "users"
-    id = Column(Integer, primary_key=True, index=True)
-    username = Column(String, unique=True, index=True, nullable=False)
-    email = Column(String, unique=True, index=True, nullable=False)
-    hashed_password = Column(String, nullable=False)
-
 class Student(Base):
     __tablename__ = "students"
     id = Column(Integer, primary_key=True)
