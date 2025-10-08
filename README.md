@@ -84,3 +84,11 @@ students
 
 assignments
 | id | student_id | text | similarity_score |
+
+Video Demo
+
+ Demo 1:
+https://www.loom.com/share/ec0e514e23e143c3858dc7169016a2b2?sid=f3929bbf-9f9b-42c0-add7-2aa650130d21
+
+ Demo 2:
+https://www.loom.com/share/b908889c0f2845b3b5373b8f86c33a9f?sid=eb7ea1cd-80f3-41d0-8902-e48ce1d0aa32
