@@ -88,4 +88,8 @@ assignments
 
 # Video Demo
 
-<table> <tr> <td align="center"> <a href="https://www.loom.com/share/ec0e514e23e143c3858dc7169016a2b2?sid=f3929bbf-9f9b-42c0-add7-2aa650130d21" target="_blank"> <img src="https://cdn.loom.com/sessions/thumbnails/ec0e514e23e143c3858dc7169016a2b2-with-play.gif" width="400" alt="Loom Demo 1"/> </a> <br/> <strong>Demo 1</strong> <br/> <sub>Assignment submission → n8n trigger → RAG analysis</sub> </td> <td align="center"> <a href="https://www.loom.com/share/b908889c0f2845b3b5373b8f86c33a9f?sid=eb7ea1cd-80f3-41d0-8902-e48ce1d0aa32" target="_blank"> <img src="https://cdn.loom.com/sessions/thumbnails/b908889c0f2845b3b5373b8f86c33a9f-with-play.gif" width="400" alt="Loom Demo 2"/> </a> <br/> <strong>Demo 2</strong> <br/> <sub>Shows how semantic similarity scoring works in action</sub> </td> </tr> </table>
+Demo 1 – Core Workflow Overview:
+https://www.loom.com/share/ec0e514e23e143c3858dc7169016a2b2?sid=f3929bbf-9f9b-42c0-add7-2aa650130d21
+
+Demo 2 – Plagiarism Detection & RAG Response:
+https://www.loom.com/share/b908889c0f2845b3b5373b8f86c33a9f?sid=eb7ea1cd-80f3-41d0-8902-e48ce1d0aa32
