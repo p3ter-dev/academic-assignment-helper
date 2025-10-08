@@ -18,12 +18,13 @@ Built with **FastAPI**, **PostgreSQL (pgvector)**, **n8n**, and **OpenAI**, full
 ## Setup
 
 ### Clone & Configure
-```bash
+
 git clone https://github.com/p3ter-dev/academic-assignment-helper
 cd academic-assignment-helper
 cp .env.example .env
 
 # Run with Docker
+
 docker compose up -d --build
 
 # Services:
