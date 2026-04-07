@@ -1,33 +1,65 @@
 {
-  "name": "My workflow",
+  "name": "Assignment Plagiarism and RAG Analysis",
   "nodes": [
     {
       "parameters": {
         "httpMethod": "POST",
         "path": "assignment",
+        "responseMode": "lastNode",
         "options": {}
       },
-      "type": "n8n-nodes-base.webhook",
-      "typeVersion": 2.1,
-      "position": [
-        0,
-        0
-      ],
       "id": "151397ef-9088-47b7-95a9-1e49e1f20743",
       "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1.1,
+      "position": [
+        240,
+        300
+      ],
       "webhookId": "41fd99f0-c62c-474a-b56c-813292730589"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://rag_service:8001/rag/query",
+        "authentication": "none",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"query\": \"{{ $json.body.text }}\"\n}",
+        "options": {}
+      },
+      "id": "2",
+      "name": "Ask RAG Service",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        460,
+        300
+      ]
     }
   ],
   "pinData": {},
-  "connections": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Ask RAG Service",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
   "active": true,
   "settings": {
     "executionOrder": "v1"
   },
   "versionId": "be2d7a7b-0dc9-4b11-a889-3032ab402ef4",
+  "id": "4t3MfiNB0qcSnxdi",
   "meta": {
     "instanceId": "ca6abf3809cb8d6043c9ad3de16f7c93ddc131340e3e340e3a9b65b3f1397052"
   },
-  "id": "4t3MfiNB0qcSnxdi",
   "tags": []
 }
