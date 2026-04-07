@@ -1,14 +1,82 @@
 [
   {
-    "student_id": 1,
-    "text": "What is photosynthesis?"
+    "title": "Photosynthesis: The Conversion of Light Energy to Chemical Energy",
+    "authors": "Calvin, M., Bassham, J.A.",
+    "publication_year": 2021,
+    "abstract": "Photosynthesis is the biological process by which green plants, algae, and some bacteria convert light energy from the sun into chemical energy stored in glucose. The process occurs in two main stages: the light-dependent reactions in the thylakoid membranes and the Calvin cycle in the stroma. Chlorophyll absorbs light primarily in the blue and red wavelengths, and this energy is used to split water molecules, releasing oxygen as a byproduct while reducing NADP+ to NADPH and generating ATP.",
+    "full_text": "Photosynthesis underpins almost all life on Earth by fixing atmospheric carbon dioxide into organic compounds. The overall chemical equation is 6CO2 + 6H2O + light energy → C6H12O6 + 6O2. In the light-dependent stage, photosystem II and photosystem I work together in an electron transport chain to produce ATP and NADPH. These energy carriers then power the Calvin cycle, where CO2 is incorporated into three-carbon compounds that are eventually converted to glucose. Factors affecting photosynthetic rate include light intensity, CO2 concentration, temperature, and water availability.",
+    "source_type": "journal_article"
   },
   {
-    "student_id": 2,
-    "text": "What is life?"
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "authors": "Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., Küttler, H., Lewis, M., Yih, W., Rocktäschel, T., Riedel, S., Kiela, D.",
+    "publication_year": 2020,
+    "abstract": "Large pre-trained language models have been shown to store factual knowledge in their parameters, but their ability to access and precisely manipulate this knowledge is still limited. RAG combines parametric and non-parametric memory for language generation by using a dense retrieval component to fetch relevant documents, which are then used as additional context for a seq2seq model to generate more accurate and grounded responses.",
+    "full_text": "Retrieval-Augmented Generation (RAG) addresses the hallucination problem in LLMs by combining a neural retrieval module with a generative model. The retriever finds the top-k most relevant passages from a knowledge corpus using dense embeddings and Maximum Inner Product Search (MIPS). The generator then conditions its output on both the input query and the retrieved passages. This architecture allows the model to reference up-to-date external knowledge without retraining, making it especially useful for open-domain question answering and knowledge-intensive tasks.",
+    "source_type": "conference_paper"
   },
   {
-    "student_id": 3,
-    "text": "What is RAG?"
+    "title": "Machine Learning: A Probabilistic Perspective",
+    "authors": "Murphy, K.P.",
+    "publication_year": 2022,
+    "abstract": "Machine learning is a subfield of artificial intelligence that focuses on building systems that can learn from and make decisions based on data. This comprehensive overview covers supervised learning, unsupervised learning, and reinforcement learning paradigms, exploring algorithms such as linear regression, support vector machines, neural networks, and decision trees.",
+    "full_text": "Machine learning algorithms improve automatically through experience. Supervised learning involves training a model on labeled data to predict outputs for new inputs. Common algorithms include linear regression for continuous outputs, logistic regression for binary classification, and deep neural networks for complex pattern recognition. Unsupervised learning discovers hidden structure in unlabeled data through clustering (k-means, DBSCAN) and dimensionality reduction (PCA, t-SNE). Reinforcement learning trains agents to make sequences of decisions by rewarding desired behaviors and penalizing undesired ones.",
+    "source_type": "textbook"
+  },
+  {
+    "title": "Climate Change and Its Impact on Global Ecosystems",
+    "authors": "Hansen, J., Sato, M., Ruedy, R.",
+    "publication_year": 2023,
+    "abstract": "Climate change, driven primarily by anthropogenic greenhouse gas emissions, is causing unprecedented shifts in global temperature patterns, precipitation, and extreme weather events. These changes are profoundly affecting terrestrial and marine ecosystems, threatening biodiversity, and disrupting the services that ecosystems provide to human societies.",
+    "full_text": "Global average temperatures have risen approximately 1.1°C above pre-industrial levels, with projections indicating further increases of 1.5–4.5°C by 2100 under various emission scenarios. Arctic regions are warming two to three times faster than the global average, causing sea ice loss and permafrost thaw. Ocean acidification from CO2 absorption threatens coral reefs and marine food chains. Shifts in species distributions, altered phenology, and increased extinction rates are documented across all major biomes. Mitigation strategies include renewable energy transition, carbon capture, and reforestation.",
+    "source_type": "journal_article"
+  },
+  {
+    "title": "The French Revolution: Causes, Events, and Legacy",
+    "authors": "Schama, S.",
+    "publication_year": 2020,
+    "abstract": "The French Revolution (1789–1799) was a period of radical political and societal transformation in France that overthrew the monarchy, established a republic, and culminated in Napoleon Bonaparte's rise to power. It was driven by Enlightenment ideas, financial crises, social inequality, and popular discontent with the Ancien Régime.",
+    "full_text": "The French Revolution began with the convening of the Estates-General in May 1789, which quickly escalated to the formation of the National Assembly and the storming of the Bastille on July 14, 1789. Key phases include the Constitutional Monarchy (1789–1792), the First Republic and Reign of Terror (1792–1794) under Robespierre, and the Directory (1795–1799). The Revolution abolished feudalism, issued the Declaration of the Rights of Man and Citizen, and spread Enlightenment ideals of liberty, equality, and fraternity across Europe. Its legacy includes modern democracy, nationalism, and the concept of human rights.",
+    "source_type": "book"
+  },
+  {
+    "title": "DNA Replication, Repair, and Recombination",
+    "authors": "Lodish, H., Berk, A., Kaiser, C.A., Krieger, M.",
+    "publication_year": 2021,
+    "abstract": "DNA replication is a fundamental biological process by which a cell copies its DNA before cell division. The process is semi-conservative, highly accurate, and involves a complex machinery of enzymes including DNA polymerases, helicases, primases, and ligases. DNA repair mechanisms correct errors and damage to maintain genomic integrity.",
+    "full_text": "DNA replication begins at specific chromosomal locations called origins of replication. Helicase unwinds the double helix, and primase synthesizes short RNA primers. DNA polymerase III then adds nucleotides in the 5' to 3' direction, creating a leading strand continuously and a lagging strand in Okazaki fragments. DNA ligase seals the fragments. Error rates are approximately 1 in 10^9 base pairs due to proofreading by DNA polymerase and mismatch repair systems. UV-induced thymine dimers are repaired by nucleotide excision repair, while double-strand breaks are fixed by homologous recombination or non-homologous end joining.",
+    "source_type": "textbook"
+  },
+  {
+    "title": "The Role of Artificial Intelligence in Modern Healthcare",
+    "authors": "Topol, E.J.",
+    "publication_year": 2023,
+    "abstract": "Artificial intelligence is transforming healthcare by enabling more accurate diagnostics, personalized treatment planning, drug discovery acceleration, and administrative efficiency. Deep learning models have demonstrated performance comparable to or exceeding human experts in image recognition tasks such as radiology, dermatology, and ophthalmology.",
+    "full_text": "AI applications in healthcare span medical imaging analysis, genomic data interpretation, clinical decision support, and natural language processing of electronic health records. Convolutional neural networks (CNNs) can detect diabetic retinopathy, skin cancer, and pneumonia from images with high sensitivity and specificity. Recurrent neural networks and transformers process longitudinal patient data to predict disease progression and readmission risk. Challenges include algorithmic bias, data privacy, regulatory approval, and the need for clinical validation. The FDA has cleared over 500 AI-based medical devices as of 2023.",
+    "source_type": "journal_article"
+  },
+  {
+    "title": "Newton's Laws of Motion and Classical Mechanics",
+    "authors": "Halliday, D., Resnick, R., Walker, J.",
+    "publication_year": 2020,
+    "abstract": "Classical mechanics, founded on Newton's three laws of motion, describes the behavior of physical bodies in response to forces. Newton's first law establishes the concept of inertia, the second law relates force, mass, and acceleration, and the third law describes action-reaction pairs. These principles form the foundation of physics and engineering.",
+    "full_text": "Newton's First Law states that an object at rest stays at rest and an object in motion stays in motion unless acted upon by a net external force. Newton's Second Law is expressed as F = ma, where F is net force, m is mass, and a is acceleration. Newton's Third Law states that for every action there is an equal and opposite reaction. Classical mechanics successfully predicts projectile motion, circular motion, orbital dynamics, and simple harmonic oscillation. Limitations appear at very high velocities (requiring special relativity) and at atomic scales (requiring quantum mechanics).",
+    "source_type": "textbook"
+  },
+  {
+    "title": "Cognitive Behavioral Therapy: Theory and Practice",
+    "authors": "Beck, A.T., Clark, D.A.",
+    "publication_year": 2022,
+    "abstract": "Cognitive Behavioral Therapy (CBT) is a structured, time-limited psychotherapy that focuses on identifying and modifying dysfunctional thoughts, beliefs, and behaviors that contribute to psychological distress. It has strong empirical support for treating depression, anxiety disorders, PTSD, OCD, and eating disorders.",
+    "full_text": "CBT is based on the cognitive model, which posits that psychological distress arises from maladaptive thinking patterns called cognitive distortions, such as catastrophizing, overgeneralization, and all-or-nothing thinking. Treatment involves psychoeducation, thought monitoring through thought records, cognitive restructuring, and behavioral experiments. Exposure therapy is a key component for anxiety and phobias, involving graduated confrontation of feared stimuli. Meta-analyses show CBT produces lasting improvements maintained at follow-up, often superior to medication alone for anxiety disorders. Adaptations include DBT, ACT, and mindfulness-based cognitive therapy.",
+    "source_type": "journal_article"
+  },
+  {
+    "title": "Blockchain Technology: Principles and Applications",
+    "authors": "Nakamoto, S., Buterin, V.",
+    "publication_year": 2021,
+    "abstract": "Blockchain is a distributed ledger technology that enables secure, transparent, and tamper-resistant record-keeping without a central authority. Originally devised for Bitcoin cryptocurrency, blockchain now underpins decentralized finance, supply chain management, digital identity, and smart contracts.",
+    "full_text": "A blockchain is a chain of cryptographically linked blocks, each containing a list of transactions, a timestamp, and the hash of the previous block. Consensus mechanisms such as Proof of Work (PoW) and Proof of Stake (PoS) ensure agreement among distributed nodes without trusting any single party. Smart contracts are self-executing code stored on the blockchain that automatically enforce agreement terms when predefined conditions are met. Ethereum extended Bitcoin's design with a Turing-complete scripting language enabling decentralized applications (dApps). Challenges include scalability (transactions per second), energy consumption of PoW, and regulatory uncertainty.",
+    "source_type": "conference_paper"
   }
 ]
