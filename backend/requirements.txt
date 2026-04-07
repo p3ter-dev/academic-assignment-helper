@@ -9,3 +9,6 @@ python-multipart
 requests
 python-dotenv
 pydantic[email]
+google-generativeai
+pgvector
+httpx
