@@ -2,9 +2,10 @@ from sqlalchemy import Column, Integer, String, Text, ForeignKey, Float, TIMESTA
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.sql import func
-from sqlalchemy.dialects.postgresql import ARRAY
+from pgvector.sqlalchemy import Vector
 
 Base = declarative_base()
+
 class Student(Base):
     __tablename__ = "students"
     id = Column(Integer, primary_key=True)
@@ -19,10 +20,11 @@ class Assignment(Base):
     id = Column(Integer, primary_key=True)
     student_id = Column(Integer, ForeignKey("students.id"))
     filename = Column(String)
-    original_text = Column(Text)
+    original_text = Column(Text, nullable=False)
     topic = Column(String)
     academic_level = Column(String)
     word_count = Column(Integer)
+    embedding = Column(Vector(3072))
     uploaded_at = Column(TIMESTAMP, server_default=func.now())
 
 class AnalysisResult(Base):
@@ -46,4 +48,4 @@ class AcademicSource(Base):
     abstract = Column(Text)
     full_text = Column(Text)
     source_type = Column(String)
-    embedding = Column(ARRAY(Float))
+    embedding = Column(Vector(3072))
